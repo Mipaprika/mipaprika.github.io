@@ -7,22 +7,24 @@
     <meta name="viewport" content="width=device-width">
 
     <!-- syntax highlighting CSS -->
-    <link rel="stylesheet" href="/css/syntax.css">
+    <link rel="stylesheet" href="../css/syntax.css">
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="../css/main.css">
   </head>
   <body>
-    <header>
-      <h1>Mipaprika's Blog</h1>
-    </header>
-    <nav>
-      <ul>
-        <li><a href="#">Coding life</a></li>
-        <li><a href="#">Wonderful life</a></li>
-        <li><a href="#">About</a></li>
-      </ul>
-    </nav>
-    {{ content }}
+    <div class="site">
+      <header>
+        <h1 class="group"><a href="/">Mipaprika's Blog</a></h1>
+        <nav>
+          <ul>
+            <li><a href="#">Coding life</a></li>
+            <li><a href="#">Wonderful life</a></li>
+            <li><a href="#">About</a></li>
+          </ul>
+        </nav>
+      </header>
+      {{ content }}
+    </div>
   </body>
 </html>
