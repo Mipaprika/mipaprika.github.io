@@ -15,22 +15,11 @@ html, body { height: 100%; }
 body {
   background-color: #FFF;
   font: 13.34px Helvetica, Arial, sans-serif;
-  font-size: small;
   text-align: center;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-size: 100%; }
-
-h1 { margin-bottom: 1em; }
-p { margin: 1em 0; }
-
 a{
   text-decoration: none;
-}
-
-li{
-  list-style: none;
 }
 
 .group:before,.group:after {
@@ -43,6 +32,7 @@ li{
 .group {
   zoom: 1; /* IE6&7 */
 }
+
 /*****************************************************************************/
 /*
 /* Home
@@ -103,9 +93,15 @@ li{
   width: 100%;
   padding: 10px;
 }
-.site h1{
+.site header h1{
   float: left;
   font-size: 28px;
+  margin: 0;
+  opacity: .8;
+}
+.site header h1:hover{
+  opacity: 1;
+  transition: opacity .3s ease-in-out;
 }
 .site header nav{
   padding-top: 8px;
@@ -113,6 +109,7 @@ li{
 .site header a{
   color: #fff;
   text-shadow: 1px .5px .5px #ccc;
+  text-decoration: none;
 }
 .site header li{
   display: inline;
@@ -132,45 +129,32 @@ li{
   color: #000;
 }
 
-.site .content{
-  width: 400px;
-  background: #333;
+.content{
+  width: 700px;
+  border: 1px solid #ccc;
+  margin: 0 auto;
+  padding: 20px;
+  position: relative;
 }
 
-/*****************************************************************************/
-/*
-/* Posts
-/*
-/*****************************************************************************/
-
-/* standard */
-.post pre {
-  border: 1px solid #ddd;
-  background-color: #eef;
-  padding: 0 .4em;
+.content article header{
+  position: absolute;
+  left: -200px;
 }
 
-.post ul, .post ol {
-  margin-left: 1.35em;
+.article-list{
+  list-style: none;
 }
-
-.post code {
-  border: 1px solid #ddd;
-  background-color: #eef;
-  padding: 0 .2em;
+.article-list ul, .article-list ol{
+  margin-bottom: 10px;
 }
-
-.post pre code {
-  border: none;
+.article-list header{
+  width: 200px;
 }
-
-/* terminal */
-.post pre.terminal {
-  border: 1px solid #000;
-  background-color: #333;
-  color: #FFF;
+.article-list header h1{
+  font-size: 24px;
+  line-height: 30px;
 }
-
-.post pre.terminal code {
-  background-color: #333;
+.post{
+  text-align: left;
 }
