@@ -14,10 +14,13 @@ html, body { height: 100%; }
 
 body {
   background-color: #FFF;
-  font: 13.34px Helvetica, Arial, sans-serif;
+  font: 13.34px Helvetica, "微软雅黑", Arial, sans-serif;
   text-align: center;
 }
 
+h1,h2,h3,h4,h5,h6{
+  font-family: Helvetica, "华文中宋", Arial, sans-serif;
+}
 a{
   text-decoration: none;
 }
@@ -97,36 +100,40 @@ a{
   float: left;
   font-size: 28px;
   margin: 0;
-  opacity: .8;
 }
 .site header h1:hover{
-  opacity: 1;
+  opacity: .6;
   transition: opacity .3s ease-in-out;
 }
 .site header nav{
-  padding-top: 8px;
+  padding-top: 11px;
 }
 .site header a{
   color: #fff;
   text-shadow: 1px .5px .5px #ccc;
   text-decoration: none;
 }
+.site header ul{
+  float: left;
+  margin-left: 100px;
+}
 .site header li{
   display: inline;
-  margin-right: 110px;
+  margin-right: 100px;
 }
 .site header li a{
-  font-size: 20px;
+  opacity: .6;
+  font-size: 16px;
   text-transform: uppercase;
   padding: 8px;
-  -webkit-border-radius: 5px;
+/*  -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
-  border-radius: 5px;
-  transition: background .3s ease-in-out;
+  border-radius: 5px;*/
+  transition: opacity .3s ease-in-out;
 } 
 .site header li a:hover{
-  background: #fff;
-  color: #000;
+  /*background: #fff;*/
+  opacity: 1;
 }
 
 .content{
@@ -139,11 +146,24 @@ a{
 
 .content article header{
   position: absolute;
-  left: -200px;
+  left: -210px;
+  margin-top: -10px;
 }
 
 .article-list{
   list-style: none;
+  margin-right: 25px;
+}
+.article-list > li{
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 25px;
+  margin-top: 25px;
+}
+.article-list > li:last-child{
+  border-bottom: none;
+}
+.article-list > li:first-child{
+  margin-top: 0;
 }
 .article-list ul, .article-list ol{
   margin-bottom: 10px;
@@ -152,9 +172,16 @@ a{
   width: 200px;
 }
 .article-list header h1{
-  font-size: 24px;
+  font-size: 19px;
   line-height: 30px;
 }
 .post{
   text-align: left;
+}
+
+pre{
+  background-color: #49483e;
+}
+.lineno{
+  color: #fff;
 }
